@@ -54,7 +54,7 @@
 </header>
 <body>
     <div class="login-container">
-        <form method="POST" action="">
+        <form method="POST" action="auth.php">
             <h2>Login Credential</h2>
             <label for="username" id="lblusername" name="lblusername">Username: </label>
             <input type="text" name="username" id="username" class="inputText"/>
