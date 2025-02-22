@@ -56,6 +56,12 @@
     <div class="login-container">
         <form method="POST" action="auth.php">
             <h2>Login Credential</h2>
+            <?php  
+            if(isset($_GET['error']) && isset($_GET['error'])==1)
+            {
+                echo "<h3>Invalid Password!</h3>";
+            }
+            ?>
             <label for="username" id="lblusername" name="lblusername">Username: </label>
             <input type="text" name="username" id="username" class="inputText"/>
 
